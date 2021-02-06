@@ -2,24 +2,92 @@
 
 .App {
   text-align: center;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.css-selector {
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 html {
-	background: linear-gradient(-45deg, #2920b0, #3b55e6, #591f9c, #9c1f3c);
+	background: linear-gradient(-45deg, #2920b0, #3b55e6, #361f9c, #c02c6a);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: AnimationName 15s ease infinite;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.top_frame_1{
+  background-image: linear-gradient(to bottom,#0151ff,#49ceff);
+  position: fixed;
+  width: 8%;
+  padding: 1.5%; 
+  height: 15%;
+  border-radius: 15px;
+  left: 13%;
+  text-align: center;
+  font-family: 'Baloo 2', bold;
+  font-size: 150%;
+  
+  transform: scale(1);
+  transition:  0.3s ease-in-out;
+  transition:  0.3s ease-out;
+}
+
+ .top_frame_1:hover {
+  transform: scale(1.1);
+  text-transform: 110%;
+}
+
+.top_frame_2{
+  background-image: linear-gradient(to bottom,#0026ff,#008cff);
+  position: fixed;
+  width: 49.5%;
+  padding: 1.5%;
+  height: 15%;
+  right: 22%;
+  border-radius: 15px;
+}
+
+.bottom_frame{
+  position: fixed;
+  width: 62.5%;
+  padding: 1.5%; 
+  height: 50%;
+  background-color:rgb(12, 12, 17);
+  border-radius: 15px;
+  bottom: 10%;
+}
+
+.center_frame{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 65.9%; 
+  right: 20.1%;
+  height: 79.7%;
+  background-color: transparent;
+  padding: 1.5%;
 }
 
 .left_frame{
@@ -27,7 +95,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width:10%;
+  width: 5%;
   background-color:rgb(12, 12, 17);
   padding: 1.5%;
   border-bottom-left-radius: 15px;
@@ -38,6 +106,10 @@ html {
 }
 
 .right_frame{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   width: 15%;
@@ -62,8 +134,11 @@ html {
   border-color: transparent;
 }
 
+.button_1{
 
-
+  right: 13%;
+  
+}
 
 .App-logo {
   height: 40vmin;

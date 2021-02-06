@@ -11,17 +11,45 @@ function App() {
 
           <div class = 'main_frame'>
 
-              <div class = 'left_frame'> 
+                <div class = 'left_frame'> 
               
-            
+                    <div class = 'button_1'><img class = "button_1" src="https://media.discordapp.net/attachments/805993301358018610/806360441877037066/logo.png?width=80&height=80" /></div>
                  
-              </div>
+                </div>
 
-          <div class='right_frame'>
+               <div class='right_frame'>
 
             
 
-          </div>
+               </div>
+
+                <div class='center_frame'>
+                      
+                      <div class='bottom_frame'>
+
+
+
+                      </div> 
+
+                      <div class='top_frame_1'>
+
+                        <p>$100.69</p>
+
+                      </div> 
+
+                      
+                      <div class='top_frame_2'>
+
+
+
+                      </div> 
+
+
+              </div> 
+
+               
+                
+               
 
           </div>
 
